@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <!--通过构造方法创建对象-->
+    <!--<bean id="courseDao" class="edu.ouc.dao.Impl.CourseDaoImpl"/>-->
+
+    <!--通过静态工厂的方法创建对象-->
+    <!--<bean id="bookDao" class="edu.ouc.factory.BookDaoFactory" factory-method="getBookDao"/>-->
+
+    <!--通过实例工厂的方法创建对象-->
+    <!--第一步首先创建工厂对象-->
+    <!--<bean id="orderFactory" class="edu.ouc.factory.OrderDaoFactory"/>-->
+    <!--&lt;!&ndash;第二步创建通过实例工厂创建的对象&ndash;&gt;-->
+    <!--<bean id="orderDao" factory-bean="orderFactory" factory-method="getOrderDao"/>-->
+
+    <!--通过FactoryBean创建对象-->
+    <bean id="phoneDao" class="edu.ouc.factory.PhoneFactoryBean"/>
+</beans>

@@ -1,6 +1,7 @@
 package edu.ouc;
 
-import edu.ouc.service.BookService;
+import edu.ouc.dao.OrderDao;
+import edu.ouc.dao.PhoneDao;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -8,16 +9,12 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  * @author Marson
  * @date 2024/6/15
  */
-public class App {
+public class App4 {
     public static void main(String[] args) {
-        // BookServiceImpl bookService = new BookServiceImpl();
-        // bookService.save();
-
         // 1.创建IOC容器
         ApplicationContext ctx = new ClassPathXmlApplicationContext("ApplicationContext.xml");
         // 2.获取bean
-        BookService bookService = (BookService) ctx.getBean("bookService");
-
-        bookService.save();
+        PhoneDao phoneDao = (PhoneDao) ctx.getBean("phoneDao");
+        phoneDao.save();
     }
 }

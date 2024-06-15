@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+
+    <bean id="bookDao" class="edu.ouc.dao.Impl.BookDaoImpl"/>
+
+    <!--name:起别名-->
+    <!--scope:设置是否为单例，单例表示在Spring的IOC容器中**只会有该类的一个对象-->
+    <bean id="bookService" name="service" class="edu.ouc.service.Impl.BookServiceImpl" scope="prototype">
+        <property name="bookDao" ref="bookDao"/>
+    </bean>
+</beans>

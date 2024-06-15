@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <bean id="bookDao" class="edu.ouc.dao.Impl.BookDaoImpl">
+        <property name="connectionNum" value="10"/>
+        <property name="databaseName" value="mysql"/>
+    </bean>
+    <bean id="userDao" class="edu.ouc.dao.Impl.UserDaoImpl"/>
+
+    <bean id="bookService" class="edu.ouc.service.Impl.BookServiceImpl">
+        <property name="bookDao" ref="bookDao"/>
+        <property name="userDao" ref="userDao"/>
+    </bean>
+</beans>
