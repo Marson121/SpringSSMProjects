@@ -13,6 +13,13 @@
         <option value="$PROJECT_DIR$/spring-06-di_constructor/pom.xml" />
         <option value="$PROJECT_DIR$/spring-07-di_autoware/pom.xml" />
         <option value="$PROJECT_DIR$/spring-08-di_collection/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-09-datasource/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-10-container/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-11-annotation_bean1/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-11-annotation_bean2/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-12-annotation_bean_manager/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-13-annotation_di/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-14-annotation_third_bean_manager/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

@@ -1,6 +1,5 @@
 package edu.ouc;
 
-import edu.ouc.dao.BookDao;
 import edu.ouc.service.BookService;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
