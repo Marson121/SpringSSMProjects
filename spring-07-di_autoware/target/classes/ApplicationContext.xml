@@ -6,5 +6,6 @@
 
     <bean id="bookDao" class="edu.ouc.dao.Impl.BookDaoImpl"/>
 
-    <bean id="bookService" class="edu.ouc.service.Impl.BookServiceImpl"/>
+    <!--自动装配-->
+    <bean id="bookService" class="edu.ouc.service.Impl.BookServiceImpl" autowire="byType"/>
 </beans>
