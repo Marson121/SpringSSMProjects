@@ -24,6 +24,13 @@
         <option value="$PROJECT_DIR$/spring-16-spring_mybatis2/pom.xml" />
         <option value="$PROJECT_DIR$/spring-16-spring_junit/pom.xml" />
         <option value="$PROJECT_DIR$/spring-15-spring_mybatis2/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-18-aop_quickstart/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-19-aop_execution/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-20-aop_advice_type/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-21-case_interface_run_speed/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-23-case_handle_password/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-22-aop_advice_data/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-17-aop_demo/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
