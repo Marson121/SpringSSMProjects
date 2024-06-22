@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd">
+
+
+    <!--扫描component组建-->
+    <!--这里注意使用java17会报错，spring和java版本的问题-->
+    <!--setting-build-compiler-Java compiler中修改当前模块的java版本为8即可-->
+    <!--另一种方法时修改spring的版本，pom文件中修改为5.3.23也能成功-->
+    <context:component-scan base-package="edu.ouc"/>
+</beans>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd">
+
+
+    <!--方法1：直接在配置文件写数据-->
+    <!--druid对象-->
+   <!--<bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource">-->
+   <!--    <property name="driverClassName" value="com.mysql.jdbc.Driver"/>-->
+   <!--    <property name="url" value="jdbc:mysql://localhost:3306/spring_db"/>-->
+   <!--    <property name="username" value="root"/>-->
+   <!--    <property name="password" value="root"/>-->
+   <!--</bean>-->
+
+    <!--c3p0对象-->
+   <!-- <bean id="c3p0" class="com.mchange.v2.c3p0.ComboPooledDataSource">-->
+   <!--     <property name="driverClass" value="com.mysql.jdbc.Driver"/>-->
+   <!--     <property name="jdbcUrl" value="jdbc:mysql://localhost:3306/spring_db"/>-->
+   <!--     <property name="user" value="root"/>-->
+   <!--     <property name="password" value="root"/>-->
+   <!-- </bean>-->
+
+    <!--方法2：使用properties文件-->
+    <!--第一步：开启context空间-->
+    <!--第二步：加载配置文件-->
+    <!--<context:property-placeholder location="jdbc.properties"/>-->
+    <!--标准写法：从当前项目的根路径开始寻找-->
+    <!--<context:property-placeholder location="classpath:*.properties"/>-->
+    <!--从当前项目的根路径以及当前项目所依赖的所有项目的根路径开始寻找-->
+    <context:property-placeholder location="classpath*:*.properties"/>
+    <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource">
+        <property name="driverClassName" value="${jdbc.driver}"/>
+        <property name="url" value="${jdbc.url}"/>
+        <property name="username" value="${jdbc.username}"/>
+        <property name="password" value="${jdbc.password}"/>
+    </bean>
+</beans>
