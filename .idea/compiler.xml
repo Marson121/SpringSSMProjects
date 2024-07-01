@@ -35,6 +35,7 @@
         <module name="spring-11-annotation_bean1" />
         <module name="spring-19-aop_execution" />
         <module name="springmvc-04-request_param" />
+        <module name="springmvc-08-ssm" />
         <module name="spring-07-di_autoware" />
         <module name="spring-05-di_set" />
         <module name="spring-21-case_interface_run_speed" />
