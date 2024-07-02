@@ -18,7 +18,9 @@
         <module name="spring-08-di_collection" />
         <module name="springmvc-01-quickstart" />
         <module name="spring-06-di_constructor" />
+        <module name="springmvc-09-result" />
         <module name="spring-15-spring_mybatis2" />
+        <module name="springmvc-10-exception" />
         <module name="spring-20-aop_advice_type" />
         <module name="springmvc-05-response" />
         <module name="springmvc-07-rest_case" />

@@ -42,6 +42,8 @@
         <option value="$PROJECT_DIR$/springmvc-06-rest/pom.xml" />
         <option value="$PROJECT_DIR$/springmvc-07-rest_case/pom.xml" />
         <option value="$PROJECT_DIR$/springmvc-08-ssm/pom.xml" />
+        <option value="$PROJECT_DIR$/springmvc-09-result/pom.xml" />
+        <option value="$PROJECT_DIR$/springmvc-10-exception/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
