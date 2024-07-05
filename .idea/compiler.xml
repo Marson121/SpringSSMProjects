@@ -9,10 +9,12 @@
         <module name="spring-25-case_transfer_log" />
         <module name="springmvc-06-rest" />
         <module name="spring-22-aop_advice_data" />
+        <module name="springmvc-12-interceptor" />
         <module name="spring-12-annotation_bean_manager" />
         <module name="spring-18-aop_quickstart" />
         <module name="spring-17-aop_demo" />
         <module name="spring-24-case_transfer" />
+        <module name="springmvc-11-page" />
         <module name="spring-13-annotation_di" />
         <module name="spring-09-datasource" />
         <module name="spring-08-di_collection" />
